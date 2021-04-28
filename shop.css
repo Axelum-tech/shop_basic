@@ -1,0 +1,39 @@
+div .pacmanImage{
+    width: 200px;
+    background: red;
+    position: relative;
+    margin: auto;
+    left: 0;
+    right: 0;
+    display: block;
+}
+
+.product{
+    border: 2px solid black;
+    display: block;
+    width: 250px;
+    padding:10px;
+    margin:auto;
+    margin-bottom:1em;
+    position: relative;
+    text-align: center;
+}
+
+.product .wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cartIcon{
+    font-size: 50px;
+    position:absolute;
+    top: 20%;
+    left: 80%;
+} 
+
+#cart{
+    font-size: 20px;
+    position:absolute;
+    top: 15%;
+    left: 82%;
+} 
