@@ -42,19 +42,30 @@ let products=[
 
 let cartArray =[]
 
-
+// Function that calculates sum and shows the number of selected products
 function addToCart(i){
-    let message=`The product ${products[i].name} was added to cart`
+    
     let selected =products[i]
     selected.q=parseInt(prompt(`how many ${products[i].name} do you want `))
-    alert(message)
     cartArray.push(selected)
-    cart.innerHTML=``
+
+    let message=`The product ${products[i].name} was added to cart`
+    alert(message)
     
-    cart.innerHTML+=
-    `
-    <div>${cartArray[i].q}</div>       
-         ` 
+    let sum=0
+    for (i=0; i<cartArray.length;i++){
+        
+        sum+=cartArray[i].q
+        cart.innerHTML=``
+        cart.innerHTML+=
+                `
+        <div>${sum}</div>
+
+             `
+    }
+    
+     
+   
 }
 
 
